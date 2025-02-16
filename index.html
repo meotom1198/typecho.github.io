@@ -9,37 +9,43 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #e9ecef, #ffffff);
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
             color: #343a40;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         header {
-            background: #007BFF;
+            background: #1976d2;
             color: #fff;
-            padding: 30px;
+            padding: 40px;
             text-align: center;
-            border-bottom: 4px solid #0056b3;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #0d47a1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             margin: 0;
-            font-size: 2.8em;
+            font-size: 2.5em;
         }
         main {
-            padding: 20px;
+            padding: 30px;
             max-width: 900px;
             margin: 30px auto;
             background: #fff;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 15px;
             transition: transform 0.3s;
         }
         main:hover {
             transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
         }
         h2 {
-            color: #007BFF;
+            color: #1976d2;
             margin-top: 20px;
-            border-bottom: 2px solid #007BFF;
+            border-bottom: 2px solid #1976d2;
             padding-bottom: 5px;
         }
         p {
@@ -48,28 +54,32 @@
         ul {
             list-style-type: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
         }
         li {
-            background: #f8f9fa;
+            background: #f1f8e9;
             margin: 5px 0;
             padding: 15px;
             border-radius: 8px;
             transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         li:hover {
-            background: #e2e6ea;
-            transform: scale(1.02);
+            background: #c8e6c9;
+            transform: scale(1.05);
         }
         footer {
             text-align: center;
             padding: 20px 0;
-            background: #007BFF;
+            background: #1976d2;
             color: #fff;
             position: relative;
             bottom: 0;
             width: 100%;
             margin-top: 30px;
-            border-top: 4px solid #0056b3;
+            border-top: 4px solid #0d47a1;
         }
         .profile-image {
             width: 150px;
@@ -88,7 +98,7 @@
         }
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.2em;
+                font-size: 2em;
             }
             main {
                 margin: 20px;
@@ -116,13 +126,15 @@
             <li>Sở thích 1</li>
             <li>Sở thích 2</li>
             <li>Sở thích 3</li>
+            <li>Sở thích 4</li>
+            <li>Sở thích 5</li>
         </ul>
     </section>
 
     <section>
         <h2>Thông Tin Liên Lạc</h2>
         <div class="contact-info">
-            <p>Email: <a href="mailto:[email của bạn]" style="color: #007BFF; text-decoration: none;">[email của bạn]</a></p>
+            <p>Email: <a href="mailto:[email của bạn]" style="color: #1976d2; text-decoration: none;">[email của bạn]</a></p>
             <p>Điện thoại: [số điện thoại của bạn]</p>
         </div>
     </section>
